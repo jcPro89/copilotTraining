@@ -1,10 +1,9 @@
-function addMember() {
-    var member = new member();
-    member.name = "John";
-    member.age = 30;
-    member.save(function(err) {
-        if (err) throw err;
-        console.log('Member saved successfully!');
-    });
+function skillsMember() {
+  var skills = ['HTML', 'CSS', 'JS', 'React', 'Node'];
+  var member = {
+    name: 'John',
+    age: 25,
+    skills: skills
+  };
+  console.log(member.skills);
 }
-
